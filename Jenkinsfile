@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install required Python packages (e.g., Selenium)
-                sh 'pip install -r requirements.txt'
+                sh 'pip3 install -r requirements.txt'
             }
         }
 
         stage('Run Selenium Tests') {
             steps {
                 // Execute the Selenium test script (project3.py)
-                sh 'python project3.py'
+                sh 'python3 project3.py'
             }
         }
 
